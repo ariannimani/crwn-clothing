@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { UserProvider } from "./contexts/user.context";
 import { BrowserRouter } from "react-router-dom";
-import { ProductsProvider } from "./contexts/product.contect";
+import { ProductsProvider } from "./contexts/product.context";
 import { CartProvider } from "./contexts/cart.context.jsx";
 
 ReactDOM.render(
