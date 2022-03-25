@@ -1,11 +1,14 @@
-import React, { useContext } from "react";
-import "./shop.styles.scss";
+import { useContext } from "react";
 
-import { ProductsContext } from "../../contexts/product.contect";
 import ProductCard from "../../components/product-card/product-card.component";
 
-export default function Shop() {
+import { ProductsContext } from "../../contexts/products.context";
+
+import "./shop.styles.scss";
+
+const Shop = () => {
   const { products } = useContext(ProductsContext);
+
   return (
     <div className="products-container">
       {products.map((product) => (
@@ -13,4 +16,6 @@ export default function Shop() {
       ))}
     </div>
   );
-}
+};
+
+export default Shop;
